@@ -1,0 +1,15 @@
+#!/this/will/be/replaced/by/rubygems
+# -*- encoding: binary -*-
+
+require 'audio_fingerprint/version'
+require 'audio_fingerprint/fingerprint'
+
+if ARGV[0].nil?
+	STDERR.puts "Version: #{AudioFingerprint::VERSION}"
+	STDERR.puts "Usage: <input file|url>"
+	exit(1)
+else
+	f = AudioFingerprint::Fingerprint.new(ARGV[0])
+	f.create_fingerprint
+	STDERR.puts f.fingerprint.inspect
+end
