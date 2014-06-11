@@ -46,7 +46,9 @@ f1.compare(f2.fingerprint) # return the match percentage or false
 
 ### Terminal
 
-```audio_fingerprint```
+```
+audio_fingerprint
+```
 
 ## Contributing
 
@@ -71,6 +73,6 @@ I really want to push this forward and make cool things with it, you guys can he
 
 - Support for multiple audio formats, frequencies and channels
 - Ability to recognize multiple audio fingerprints in one fingerprint (like Google Speech API does, transform a phrase into text words).
- - This will require a database to store the fingerprinted words to compare them with the fingerprinted phrase.
+- This will require a database to store the fingerprinted words to compare them with the fingerprinted phrase.
 
 Thanks guys!
