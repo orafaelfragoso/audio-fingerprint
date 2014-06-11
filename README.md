@@ -2,20 +2,6 @@
 
 This gem was built to help not only developers but enthusiasts to have a start with audio fingerprint. 
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'audio-fingerprint'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install audio-fingerprint
-
 ## Pre-requisites
 
 To fingerprint audio you must have a wav file with this configuration:
@@ -24,7 +10,25 @@ To fingerprint audio you must have a wav file with this configuration:
 - 32 bits float
 - 44100Hz
 
-If you have that, you're good to go!
+Also, make sure you installed the FFTW library:
+
+```brew install fftw```
+
+Or... you can download the source and compile the code if you're on Linux.
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```gem 'audio-fingerprint'```
+
+And then execute:
+
+```$ bundle```
+
+Or install it yourself as:
+
+```$ gem install audio-fingerprint```
 
 ## Usage
 
@@ -42,9 +46,7 @@ f1.compare(f2.fingerprint) # return the match percentage or false
 
 ### Terminal
 
-```
-audio_fingerprint
-```
+```audio_fingerprint```
 
 ## Contributing
 
