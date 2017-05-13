@@ -1,4 +1,4 @@
-# Audio::Fingerprint
+# Audio::Fingerprint (No longer maintained)
 
 This gem was built to help not only developers but enthusiasts to have a start with audio fingerprint. 
 
